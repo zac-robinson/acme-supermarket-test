@@ -19,7 +19,7 @@ export class Basket {
     this.items.forEach(item => {
       totalPrice += this.applyOffer(item, this.pricingRules)
     });
-    return totalPrice.toFixed(2);
+    return Number(totalPrice.toFixed(2));
   }
 
   applyOffer(item, pricingRules) {
