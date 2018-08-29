@@ -9,6 +9,7 @@ export class Basket {
     if (itemIndex !== -1) {
       this.items[itemIndex].quantity++;
     } else {
+      item.quantity = 1;
       this.items.push(item);
     }
   }
